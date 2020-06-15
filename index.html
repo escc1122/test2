@@ -45,12 +45,15 @@ div.box {height:100px; width:100px; float:left; margin:10px; color:white; text-a
 
 </head>
 <body>
-<div class="names">
+<div style="margin: 50px; font-weight: 600;">
+          <p id="content" hidden="hidden">
+</div>
+<div class="names down">
 	<div class="names ignoreMe" id="names">
 	
 </div>
 </div>
-<div class="btn">
+<div id="btn" class="btn">
 	<div class="start" onclick=showNames();>
 		开始提问
 	</div>
@@ -60,9 +63,18 @@ div.box {height:100px; width:100px; float:left; margin:10px; color:white; text-a
 <script type="text/javascript" src="jGravity.js"></script>
 <script type="text/javascript">
 
+	var contents=[];
+	var content = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我們不妨可以這樣來想: 大仲馬講過一段耐人尋思的話，把希望建築在意慾和心願上面的人們，二十次中有十九次都會失望。 希望各位能用心體會這段話。 其實，若思緒夠清晰，那麼午餐吃飯糰也就不那麼複雜了。 伊朗曾講過，疾馳的快馬，往往只跑兩個驛亭; 從容的驢子，才能日夜兼程。 希望大家能從這段話中有所收穫。 我們需要淘汰舊有的觀念，李大釗相信，知識是引導人生到光明與真實境界的燈燭。 帶著這句話，我們還要更加慎重的審視這個問題。 若能夠欣賞到午餐吃飯糰的美，相信我們一定會對午餐吃飯糰改觀。 在人生的歷程中，午餐吃飯糰的出現是必然的。 斯特林堡相信，生活的目的究竟是什麼? 是生活本身！除把生命維持到死以處不會再有其他任務。 人因此而獲得維持生命的力量。 這讓我的思緒清晰了。 當你搞懂後就會明白了。 午餐吃飯糰可以說是有著成為常識的趨勢。 說到午餐吃飯糰，你會想到什麼呢? 由於，透過逆向歸納，得以用最佳的策略去分析午餐吃飯糰。 午餐吃飯糰對我來說，已經成為了我生活的一部分。 對於午餐吃飯糰，我們不能不去想，卻也不能走火入魔。 經過上述討論，午餐吃飯糰，到底應該如何實現。 要想清楚，午餐吃飯糰，到底是一種怎麼樣的存在。 午餐吃飯糰的存在，令我無法停止對他的思考。 午餐吃飯糰絕對是史無前例的。 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;巴斯德深信，立志、工作、成功，是人類活動的三大要素。 這段話可說是震撼了我。 </p>";
+	contents[0]=content;
+	var content1 = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梅里美講過一句值得人反覆尋思的話，禮貌經常可以代替最高貴的感情。 請諸位將這段話在心中默念三遍。 回過神才發現，思考午餐吃飯糰的存在意義，已讓我廢寢忘食。 說到午餐吃飯糰，你會想到什麼呢? 看看別人，再想想自己，會發現問題的核心其實就在你身旁。 在人生的歷程中，午餐吃飯糰的出現是必然的。 伏契克說過一句富有哲理的話，英雄就是這樣一個人，他在決定性關頭做了為人類社會的利益所需要的事。 請諸位將這段話在心中默念三遍。 午餐吃飯糰的出現，必將帶領人類走向更高的巔峰。 我們都很清楚，這是個嚴謹的議題。 笛福講過一段深奧的話，只要我還能划水，我就不肯被淹死，只要我還能站立，我就不肯倒下。 這段話讓我所有的疑惑頓時豁然開朗。 午餐吃飯糰的存在，令我無法停止對他的思考。 柏拉圖講過一句值得人反覆尋思的話，如果一個人的激情，無論在快樂還是苦惱中，都有保持不忘理智所教給的關於什麼應當恐懼，什麼不應當懼怕的信條，那麼我們就因他的激情部分而稱每個這樣的人為勇敢的人。 這句話幾乎解讀出了問題的根本。 當前最急迫的事，想必就是釐清疑惑了。 阿格農相信，閒暇是霓裳，不宜常穿用。 這段話讓我的心境提高了一個層次。 斯特恩講過，對知識的渴望如同對財富的追求，越追求，慾望就越強烈。 這句話改變了我的人生。 這必定是個前衛大膽的想法。 由於，黑格爾講過一句值得人反覆尋思的話，一個擁有真正美的心靈總是有所作為的，並且是一個實實在在的人。 但願各位能從這段話中獲得心靈上的滋長。";
+	contents[1]=content1;
+	var content2="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;現在，正視午餐吃飯糰的問題，是非常非常重要的。 因為，經過上述討論，就我個人來說，午餐吃飯糰對我的意義，不能不說非常重大。 午餐吃飯糰的出現，必將帶領人類走向更高的巔峰。 那麼，每個人都不得不面對這些問題。 在面對這種問題時，務必詳細考慮午餐吃飯糰的各種可能。 若到今天結束時我們都還無法釐清午餐吃飯糰的意義，那想必我們昨天也無法釐清。 面對如此難題，我們必須設想周全。 想必大家都能了解午餐吃飯糰的重要性。 老子曾經提到過，輕諾必寡信，多易必多難。 這句話讓我們得到了一個全新的觀點去思考這個問題。 對午餐吃飯糰進行深入研究，在現今時代已經無法避免了。 對於一般人來說，午餐吃飯糰究竟象徵著什麼呢? 肖伯納告訴我們，只要我有需要，我就有活下去的理由。 滿足就是死亡。 想必各位已經看出了其中的端倪。 總而言之，可是，即使是這樣，午餐吃飯糰的出現仍然代表了一定的意義。 如果仔細思考午餐吃飯糰，會發現其中蘊含的深遠意義。 午餐吃飯糰勢必能夠左右未來。 塞內加說過，人越是老實就越倒霉。 這段話令我陷入了沈思。 一般來講，我們都必須務必慎重的考慮考慮。 做好午餐吃飯糰這件事，可以說已經成為了全民運動。 所謂午餐吃飯糰，關鍵是午餐吃飯糰需要如何解讀。 午餐吃飯糰似乎是一種巧合，但如果我們從一個更大的角度看待問題，這似乎是一種不可避免的事實。 午餐吃飯糰絕對是史無前例的。";
+	contents[2]=content2;
+
+
 function down(){
 		$('body').jGravity({ // jGravity works best when targeting the body
-			target: 'div', // Enter your target critera e.g. 'div, p, span', 'h2' or 'div#specificDiv', or even 'everything' to target everything in the body
+			target: 'div.down', // Enter your target critera e.g. 'div, p, span', 'h2' or 'div#specificDiv', or even 'everything' to target everything in the body
 			ignoreClass: 'ignoreMe', // Specify if you would like to use an ignore class, and then specify the class
 			weight: 25, // Enter any number 1-100 ideally (25 is default), you can also use 'heavy' or 'light'
 			depth: 5, // Enter a value between 1-10 ideally (1 is default), this is used to prevent targeting structural divs or other items which may break layout in jGravity
@@ -79,8 +91,7 @@ function down(){
 //定义一个定时器
 var t;
 var i = 0;
-//定义一个数组来存放所有同学的名字
-var names = new Array('飯糰','肉','菜','飯糰','飯','不要吃','飯糰');
+var names = new Array('飯糰','肉','不要菜','飯糰','飯','不要吃','飯糰');
 
 //生成名字
 function showNames() {
@@ -97,19 +108,27 @@ function showNames() {
 
 	setTimeout(function(){
 		clearInterval(t);
-		document.getElementById("names").innerHTML = "今天午餐吃"+names[0];
+		document.getElementById("names").innerHTML = "午餐吃"+names[0];
+		$('#btn').hide();
 		down();
+		setTimeout(function(){
+			var r = Math.floor(Math.random()*(contents.length));
+		// 	for (i=0 ;i<10;i++){
+		// 		r = Math.floor(Math.random()*(contents.length));
+		// console.log(r);
+		// 	}
+			console.log(r);
+			// var r = Math.floor(Math.random()*2);
+			$("#content").html(contents[r]);
+			$("#content").slideDown(5000);
+		},1000)
 	}
 	,3000);
 
 
 }
-function stop() {
-	clearInterval(t);
-}
+
 </script>
 
-<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-</div>
 </body>
 </html>
