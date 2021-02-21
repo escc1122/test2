@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Kendo UI Snippet</title>
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.119/styles/kendo.default-v2.min.css"/>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2021.1.119/js/kendo.all.min.js"></script>
+</head>
+<body>
+  
+      <input id="al_test" type='button' value="click it">
+  
+      <div id="grid">
+      </div>
+
+      <script>
+        $("#al_test").on("click",aaa);
+        
+        
+        //$(function() {
+        	function aaa(){
+          $("#grid").kendoGrid({
+            dataSource: {   
+              transport: {   
+                read: {
+                  url: "https://api.flickr.com/services/feeds/photos_public.gne",
+                  data: {
+                    tags: "nature",
+                    format: "json"
+                  },
+                  dataType: "jsonp", // "jsonp" is required for cross-domain requests; use "json" for same-domain requests
+                  jsonp: "jsoncallback",
+                }
+              },
+              schema: {
+                data: "items",
+                model: {
+                  fields: {
+                    published: {type: "date"}
+                  }
+                }
+              }
+            },
+            height: 500,
+            scrollable: true,
+            selectable: true
+          });
+        }
+         //);
+      </script>   
+</body>
+</html>
